@@ -97,11 +97,6 @@ var heart = new Sprite({
     ticksPerFrame: 4
 });
 
-// window.onload = function() {
-// 	heart.render();
-
-// };
-
 function gameLoop () {
 
   window.requestAnimationFrame(gameLoop);

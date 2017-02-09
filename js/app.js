@@ -39,6 +39,8 @@ var Sprite = function(options) {
 
 //render image function
 Sprite.prototype.render = function() {
+	// Clear the canvas
+    this.context.clearRect(0, 0, this.width/this.numberOfFrames, this.height);
 
 	// use drawImage method
     this.context.drawImage(
@@ -94,7 +96,7 @@ var heart = new Sprite({
     height: 512,
     image: heartImage,
     numberOfFrames: 6,
-    ticksPerFrame: 4
+    ticksPerFrame: 8
 });
 
 function gameLoop () {

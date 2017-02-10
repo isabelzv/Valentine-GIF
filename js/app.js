@@ -5,8 +5,8 @@ heartImage.src = "images/twitterHeartSpriteSheet.png";
 
 //grab canvas
 var canvas = document.getElementById("heartAnimation");
-canvas.width = 550;
-canvas.height = 550;
+canvas.width = 400;
+canvas.height = 400;
 
 //define sprite class initiator
 var Sprite = function(options) {

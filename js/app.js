@@ -1,7 +1,7 @@
 //create new HTML img element
 var heartImage = new Image();
 //set the img src
-heartImage.src = "images/bloodSprite.png";
+heartImage.src = "images/twitterHeartSpriteSheet.png";
 
 //grab canvas
 var canvas = document.getElementById("heartAnimation");
@@ -92,11 +92,11 @@ Sprite.prototype.update = function() {
 //create new heart sprite object using heart strip
 var heart = new Sprite({
 	context: canvas.getContext("2d"),
-    width: 3072,
-    height: 512,
+    width: 11600,
+    height: 400,
     image: heartImage,
-    numberOfFrames: 6,
-    ticksPerFrame: 8
+    numberOfFrames: 29,
+    ticksPerFrame: 4
 });
 
 function gameLoop () {

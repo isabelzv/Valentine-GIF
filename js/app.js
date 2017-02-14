@@ -99,16 +99,16 @@ var heart = new Sprite({
     ticksPerFrame: 4
 });
 
-function gameLoop () {
+function animationLoop () {
 
-  window.requestAnimationFrame(gameLoop);
+  window.requestAnimationFrame(animationLoop);
 
   heart.update();
   heart.render();
 }
 
-// Start the game loop as soon as the sprite sheet is loaded
-heartImage.addEventListener("load", gameLoop);
+// Start the animation loop as soon as the sprite sheet is loaded
+heartImage.addEventListener("load", animationLoop);
 
 // grab element with id "heading" and add click event listener
 document.getElementById("heading").addEventListener("click", function(){

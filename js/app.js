@@ -110,3 +110,10 @@ function gameLoop () {
 // Start the game loop as soon as the sprite sheet is loaded
 heartImage.addEventListener("load", gameLoop);
 
+// grab element with id "heading" and add click event listener
+document.getElementById("heading").addEventListener("click", function(){
+		// on click call anonymous funct to add text to inner html of elem
+		// with id "message"
+	    document.getElementById("message").innerHTML = "Wanna be my valentine?";
+});
+

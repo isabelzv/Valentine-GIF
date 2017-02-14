@@ -2,10 +2,11 @@ body {
 	background-color: seashell;
 }
 
-h1 {
+body {
 	color: skyblue;
 	text-align: center;
 	margin: 20px;
+	font-family: 'Pacifico', cursive;
 }
 
 canvas {
@@ -13,4 +14,13 @@ canvas {
     margin: auto;
     display: block;
     width: 400px;
+}
+
+a {
+	text-decoration: none;
+}
+
+#message {
+	text-align: center;
+	font-size: 50px
 }
